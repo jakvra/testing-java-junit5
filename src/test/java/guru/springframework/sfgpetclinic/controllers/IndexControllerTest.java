@@ -46,7 +46,7 @@ class IndexControllerTest {
 
     @Disabled("Demo of timeout")
     @Test
-    public void testTimeout() {
+    void testTimeout() {
         assertTimeout(Duration.ofMillis(100), () -> {
             Thread.sleep(5000);
 
@@ -56,7 +56,7 @@ class IndexControllerTest {
 
     @Disabled("Demo of timeout")
     @Test
-    public void testTimeoutPreempt() {
+    void testTimeoutPreempt() {
         assertTimeoutPreemptively(Duration.ofMillis(100), () -> {
             Thread.sleep(5000);
 
@@ -77,19 +77,16 @@ class IndexControllerTest {
     @EnabledOnOs(OS.LINUX)
     @Test
     void testMeOnLinux() {
-
     }
 
     @EnabledOnOs(OS.MAC)
     @Test
     void testMeOnMacOs() {
-
     }
 
     @EnabledOnOs(OS.WINDOWS)
     @Test
     void testMeOnWindows() {
-        
     }
 
     @EnabledOnJre(JRE.JAVA_8)
@@ -110,7 +107,5 @@ class IndexControllerTest {
     @EnabledIfEnvironmentVariable(named = "USER", matches = "fred")
     @Test
     void testIfUserFred() {
-
-
     }
 }

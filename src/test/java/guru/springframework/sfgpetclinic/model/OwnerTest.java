@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class OwnerTest {
 
     @Test
-    public void dependentAssertions() {
+    void dependentAssertions() {
 
         Owner owner = new Owner(1l, "Joe", "Buck");
         owner.setCity("Key West");

@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PersonTest {
 
     @Test
-    public void groupedAssertions() {
+    void groupedAssertions() {
         // given
         Person person  = new Person(1l, "Joe", "Buck");
 
@@ -18,7 +18,7 @@ class PersonTest {
     }
 
     @Test
-    public void groupedAssertionsMsgs() {
+    void groupedAssertionsMsgs() {
         // given
         Person person  = new Person(1l, "Joe", "Buck");
 
