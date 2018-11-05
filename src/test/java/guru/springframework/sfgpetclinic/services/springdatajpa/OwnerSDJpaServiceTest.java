@@ -15,7 +15,8 @@ class OwnerSDJpaServiceTest {
 
     @BeforeEach
     void setUp() {
-        OwnerSDJpaService service = new OwnerSDJpaService(null, null, null);
+        service = new OwnerSDJpaService(null, null, null);
+
     }
 
     @Disabled
